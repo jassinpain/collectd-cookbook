@@ -5,6 +5,8 @@ description      "Install and configure the collectd monitoring daemon"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.rdoc'))
 version          "1.0.1"
 
+depends "apache2"
+
 %w{debian ubuntu}.each do |os|
   supports os
 end
